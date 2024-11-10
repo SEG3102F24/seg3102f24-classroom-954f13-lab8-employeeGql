@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="seg3x02.employeeGql.EmployeeGqlApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-10T00:13:02" hostname="Eshals-MacBook-Pro-2.local" time="0.42">
+  <properties/>
+  <testcase name="contextLoads()" classname="seg3x02.employeeGql.EmployeeGqlApplicationTests" time="0.42"/>
+  <system-out><![CDATA[19:13:01.429 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [seg3x02.employeeGql.EmployeeGqlApplicationTests]: EmployeeGqlApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:13:01.471 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration seg3x02.employeeGql.EmployeeGqlApplication for test class seg3x02.employeeGql.EmployeeGqlApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-11-09T19:13:01.600-05:00  INFO 71845 --- [    Test worker] s.e.EmployeeGqlApplicationTests          : Starting EmployeeGqlApplicationTests using Java 17.0.8.1 with PID 71845 (started by eshal in /Users/eshal/dev/lab8-eshalkamran)
+2024-11-09T19:13:01.601-05:00  INFO 71845 --- [    Test worker] s.e.EmployeeGqlApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2024-11-09T19:13:01.831-05:00  INFO 71845 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-11-09T19:13:01.883-05:00  INFO 71845 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 MongoDB repository interface.
+2024-11-09T19:13:02.043-05:00  INFO 71845 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.5"}, "platform": "Java/JetBrains s.r.o./17.0.8.1+7-b1063.1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6fb0261e, com.mongodb.Jep395RecordCodecProvider@d6b532f, com.mongodb.KotlinCodecProvider@2f4d01b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-11-09T19:13:02.057-05:00  INFO 71845 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12454334}
+2024-11-09T19:13:02.172-05:00  WARN 71845 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1d0cc25c-b077-44fb-b3f6-60f3467bf194
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-09T19:13:02.183-05:00  INFO 71845 --- [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-09T19:13:02.343-05:00  INFO 71845 --- [    Test worker] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2024-11-09T19:13:02.426-05:00  INFO 71845 --- [    Test worker] o.s.b.a.g.GraphQlAutoConfiguration       : GraphQL schema inspection:
+	Unmapped fields: {}
+	Unmapped registrations: {}
+	Unmapped arguments: {}
+	Skipped types: []
+2024-11-09T19:13:02.434-05:00  INFO 71845 --- [    Test worker] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2024-11-09T19:13:02.534-05:00  INFO 71845 --- [    Test worker] s.e.EmployeeGqlApplicationTests          : Started EmployeeGqlApplicationTests in 1.01 seconds (process running for 1.465)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
